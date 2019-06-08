@@ -11,6 +11,7 @@ public class StartActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_start);
     // TODO: addItemOnSpinner(id_spinner, array items)
+    // TODO: listenCalendarDate()
   }
 
   public void convert(View view) {

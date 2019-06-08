@@ -38,15 +38,27 @@
             android:text="Enter amount of money to convert"
             android:textSize="20sp"/>
     <EditText
-            android:id="@+id/edtText"
+            android:id="@+id/input"
             android:layout_below="@+id/enterCurText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:hint="Enter here"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_below="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Date"/>
+    <DatePicker
+            android:id="@+id/calendar"
+            android:layout_below="@id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"></DatePicker>
     <Button
             android:id="@+id/button"
-            android:layout_below="@+id/edtText"
+            android:layout_below="@+id/calendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
