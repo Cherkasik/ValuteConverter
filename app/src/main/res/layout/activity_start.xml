@@ -6,18 +6,44 @@
         android:layout_height="match_parent"
         tools:context=".StartActivity">
     <TextView
-            android:id="@+id/textview"
+            android:id="@+id/curSelectTextFrom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter Currency"
+            android:text="Choose From which Currency convert"
+            android:textSize="20sp"/>
+    <Spinner
+            android:id="@+id/spinnerFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curSelectTextFrom">
+    </Spinner>
+    <TextView
+            android:id="@+id/curSelectTextTo"
+            android:layout_below="@+id/spinnerFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose To which Currency convert"
+            android:textSize="20sp"/>
+    <Spinner
+            android:id="@+id/spinnerTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/curSelectTextTo">
+    </Spinner>
+    <TextView
+            android:id="@+id/enterCurText"
+            android:layout_below="@+id/spinnerTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter amount of money to convert"
             android:textSize="20sp"/>
     <EditText
             android:id="@+id/edtText"
-            android:layout_below="@+id/textview"
+            android:layout_below="@+id/enterCurText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="Enter your amount"/>
+            android:hint="Enter here"/>
     <Button
             android:id="@+id/button"
             android:layout_below="@+id/edtText"

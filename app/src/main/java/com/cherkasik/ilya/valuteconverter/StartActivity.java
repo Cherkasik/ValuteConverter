@@ -10,6 +10,7 @@ public class StartActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_start);
+    // TODO: addItemOnSpinner(id_spinner, array items)
   }
 
   public void convert(View view) {
