@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Valute Converter</string>
+    <string name="curSelectTextTo">Choose To which Currency convert</string>
+    <string name="curSelectTextFrom">Choose From which Currency convert</string>
+    <string name="curAmount">Enter amount of money to convert</string>
+    <string name="hintText">Enter here</string>
+    <string name="dateText">Choose Date</string>
+    <string name="buttonText">CONVERT</string>
 </resources>

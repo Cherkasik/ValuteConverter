@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".StartActivity">
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".StartActivity">
     <TextView
             android:id="@+id/curSelectTextFrom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose From which Currency convert"
+            android:text="@string/curSelectTextFrom"
             android:textSize="20sp"/>
     <Spinner
             android:id="@+id/spinnerFrom"
@@ -22,7 +22,7 @@
             android:layout_below="@+id/spinnerFrom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose To which Currency convert"
+            android:text="@string/curSelectTextTo"
             android:textSize="20sp"/>
     <Spinner
             android:id="@+id/spinnerTo"
@@ -35,7 +35,7 @@
             android:layout_below="@+id/spinnerTo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enter amount of money to convert"
+            android:text="@string/curAmount"
             android:textSize="20sp"/>
     <EditText
             android:id="@+id/input"
@@ -43,19 +43,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="Enter here"/>
+            android:hint="@string/hintText"/>
     <TextView
-        android:id="@+id/date"
-        android:layout_below="@+id/input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Choose Date"/>
+            android:id="@+id/date"
+            android:layout_below="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dateText"/>
     <DatePicker
             android:id="@+id/calendar"
             android:layout_below="@id/date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"></DatePicker>
+            android:layout_centerHorizontal="true"/>
     <Button
             android:id="@+id/button"
             android:layout_below="@+id/calendar"
@@ -63,12 +63,12 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_centerHorizontal="true"
-            android:text="CONVERT"
+            android:text="@string/buttonText"
             android:textSize="20sp"
             android:onClick="convert"/>
     <TextView
             android:layout_below="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+    />
 </RelativeLayout>
