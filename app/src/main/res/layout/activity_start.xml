@@ -16,6 +16,7 @@
             android:id="@+id/spinnerFrom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:layout_below="@+id/curSelectTextFrom">
     </Spinner>
     <TextView
@@ -29,6 +30,7 @@
             android:id="@+id/spinnerTo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:layout_below="@+id/curSelectTextTo">
     </Spinner>
     <TextView
@@ -43,6 +45,7 @@
             android:layout_below="@+id/enterCurText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
             android:inputType="number"
             android:hint="@string/hintText"
             android:autofillHints="Input your value"
@@ -52,12 +55,15 @@
             android:layout_below="@+id/input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/dateText"/>
+            android:text="@string/dateText"
+            android:textSize="20sp"/>
     <DatePicker
             android:id="@+id/calendar"
             android:layout_below="@id/date"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:layout_gravity = "center"
             android:layout_centerHorizontal="true"/>
     <Button
             android:id="@+id/button"

@@ -33,12 +33,16 @@ public class StartActivity extends AppCompatActivity {
     startActivity(intent);
   }
 
-  public void convert(View view) {
+  private String getDate(){
     DatePicker datePicker = findViewById(R.id.calendar);
     int day = datePicker.getDayOfMonth();
     int month = datePicker.getMonth() + 1;
     int year = datePicker.getYear();
+    return String.format(Locale.US, "%d/%d/%d", day, month, year);
+  }
+
+  public void convert(View view) {
     TextView textView = findViewById(R.id.result);
-    textView.setText(String.format(Locale.US, "%d %d %d", day, month, year));
+    textView.setText(getDate());
   }
 }
