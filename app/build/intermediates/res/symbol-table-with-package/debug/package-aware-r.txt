@@ -721,6 +721,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id result
 id right
 id right_icon
 id right_side
