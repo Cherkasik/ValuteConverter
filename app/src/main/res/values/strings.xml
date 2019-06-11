@@ -6,4 +6,7 @@
     <string name="hintText">Enter here</string>
     <string name="dateText">Choose Date</string>
     <string name="buttonText">CONVERT</string>
+    <string name="menu_history">History</string>
+    <string name="history_elem">This is history</string>
+    <string name="about_history">Shows history of operations</string>
 </resources>

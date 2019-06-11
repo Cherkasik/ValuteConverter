@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Jun 11 17:31:52 MSK 2019
+0.base=/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/transforms/dexMerger/debug/0
+0.path=classes.dex
+count=1
+0.baseType=DIRECTORY
+0.set=DEX

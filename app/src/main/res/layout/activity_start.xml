@@ -5,6 +5,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 tools:context=".StartActivity">
+
     <TextView
             android:id="@+id/curSelectTextFrom"
             android:layout_width="match_parent"
@@ -43,7 +44,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="@string/hintText"/>
+            android:hint="@string/hintText"
+            android:autofillHints="Input your value"
+            tools:targetApi="o"/>
     <TextView
             android:id="@+id/date"
             android:layout_below="@+id/input"
@@ -69,6 +72,5 @@
     <TextView
             android:layout_below="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-    />
+            android:layout_height="wrap_content"/>
 </RelativeLayout>
