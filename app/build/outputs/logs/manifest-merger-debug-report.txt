@@ -14,7 +14,7 @@ MERGED from [com.android.support:support-fragment:26.1.0] /home/cherkasik/.gradl
 MERGED from [com.android.support:support-core-utils:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/3c3a9fbdd2385f785a76ebe1b17ba500/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/92748efbb522a5121b28e9af0723c4e8/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/80b2552c3fc3b3492adf343be7c4ffa5/AndroidManifest.xml:17:1-31:12
-MERGED from [com.android.volley:volley:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/ddea1a1b067f1bca618645f6e7110db0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.volley:volley:1.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/b1deca0392ae16a6dee7010772159802/AndroidManifest.xml:2:1-11:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5afbc1d613da924d7ce3f1ee4cbafa8a/AndroidManifest.xml:17:1-30:12
 INJECTED from /home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/src/main/AndroidManifest.xml:2:1-23:12
 INJECTED from /home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/src/main/AndroidManifest.xml:2:1-23:12
@@ -61,8 +61,8 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/cherkasik/.gradle
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/92748efbb522a5121b28e9af0723c4e8/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/80b2552c3fc3b3492adf343be7c4ffa5/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/80b2552c3fc3b3492adf343be7c4ffa5/AndroidManifest.xml:25:5-29:19
-MERGED from [com.android.volley:volley:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/ddea1a1b067f1bca618645f6e7110db0/AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/ddea1a1b067f1bca618645f6e7110db0/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/b1deca0392ae16a6dee7010772159802/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/b1deca0392ae16a6dee7010772159802/AndroidManifest.xml:9:5-20
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5afbc1d613da924d7ce3f1ee4cbafa8a/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5afbc1d613da924d7ce3f1ee4cbafa8a/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
@@ -123,8 +123,8 @@ MERGED from [com.android.support:support-core-ui:26.1.0] /home/cherkasik/.gradle
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/92748efbb522a5121b28e9af0723c4e8/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/80b2552c3fc3b3492adf343be7c4ffa5/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/80b2552c3fc3b3492adf343be7c4ffa5/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.volley:volley:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/ddea1a1b067f1bca618645f6e7110db0/AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/ddea1a1b067f1bca618645f6e7110db0/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/b1deca0392ae16a6dee7010772159802/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/b1deca0392ae16a6dee7010772159802/AndroidManifest.xml:7:5-43
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5afbc1d613da924d7ce3f1ee4cbafa8a/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/cherkasik/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/5afbc1d613da924d7ce3f1ee4cbafa8a/AndroidManifest.xml:20:5-22:41
 INJECTED from /home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/src/main/AndroidManifest.xml

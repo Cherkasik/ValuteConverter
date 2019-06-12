@@ -25,13 +25,14 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
 public class StartActivity extends AppCompatActivity {
-  private SQLiteDatabase db = create_db();
-  private Spinner spinnerFrom = findViewById(R.id.spinnerFrom);
-  private Spinner spinnerTo = findViewById(R.id.spinnerTo);
+  private SQLiteDatabase db;
+  private Spinner spinnerFrom;
+  private Spinner spinnerTo;
   private RequestQueue mQueue;
 
   private void error(String name){
@@ -42,6 +43,9 @@ public class StartActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_start);
+    db = create_db();
+    spinnerFrom = findViewById(R.id.spinnerFrom);
+    spinnerTo = findViewById(R.id.spinnerTo);
     getValutes();
   }
 
@@ -79,9 +83,11 @@ public class StartActivity extends AppCompatActivity {
       public void onResponse(JSONObject response) {
         try {
           List<String> list = new ArrayList<>();
-          JSONArray jsonArray = response.getJSONArray("Valute");
-          for (int i = 0; i < jsonArray.length(); i++){
-            JSONObject valute = jsonArray.getJSONObject(i);
+          JSONObject jsonObject = response.getJSONObject("Valute");
+          Iterator<String> keys = jsonObject.keys();
+          while (keys.hasNext()){
+            String key = keys.next();
+            JSONObject valute = jsonObject.getJSONObject(key);
             list.add(valute.getString("Name"));
           }
           addItemsOnSpinner(list);
