@@ -17,8 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:layout_below="@+id/curSelectTextFrom">
-    </Spinner>
+            android:layout_below="@+id/curSelectTextFrom"/>
     <TextView
             android:id="@+id/curSelectTextTo"
             android:layout_below="@+id/spinnerFrom"
@@ -31,8 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10sp"
-            android:layout_below="@+id/curSelectTextTo">
-    </Spinner>
+            android:layout_below="@+id/curSelectTextTo"/>
     <TextView
             android:id="@+id/enterCurText"
             android:layout_below="@+id/spinnerTo"
