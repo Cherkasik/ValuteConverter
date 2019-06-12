@@ -83,6 +83,7 @@ public class StartActivity extends AppCompatActivity {
       public void onResponse(JSONObject response) {
         try {
           List<String> list = new ArrayList<>();
+          list. add("Российский рубль");
           JSONObject jsonObject = response.getJSONObject("Valute");
           Iterator<String> keys = jsonObject.keys();
           while (keys.hasNext()){
@@ -121,7 +122,7 @@ public class StartActivity extends AppCompatActivity {
   public void convert(View view) {
     TextView textView = findViewById(R.id.result);
     textView.setText(getDate());
-    //TODO: Convert(date, val1, val2): return res
+    //TODO: Convert(date, val1, val2): return res (будет переводить сначала в рубли, потому что все курсы от рубля)
     //TODO: add_to_history(db, ...);
   }
 }

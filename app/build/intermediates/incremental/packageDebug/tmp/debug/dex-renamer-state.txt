@@ -1,4 +1,4 @@
-#Wed Jun 12 23:56:29 MSK 2019
+#Thu Jun 13 00:05:07 MSK 2019
 base.0=/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/transforms/dexMerger/debug/0
 renamed.0=classes.dex
 path.0=classes.dex
