@@ -34,6 +34,13 @@ public class StartActivity extends AppCompatActivity {
   private Spinner spinnerFrom;
   private Spinner spinnerTo;
   private RequestQueue mQueue;
+  private EditText inputText;
+  private String curDate;
+  private TextView resText;
+  private String curFrom;
+  private String curTo;
+  private float value;
+  private String today;
 
   private void error(String name){
     Toast toast = Toast.makeText(getApplicationContext(), "Something wrong with " + name, Toast.LENGTH_SHORT);
@@ -46,6 +53,9 @@ public class StartActivity extends AppCompatActivity {
     db = create_db();
     spinnerFrom = findViewById(R.id.spinnerFrom);
     spinnerTo = findViewById(R.id.spinnerTo);
+    inputText = findViewById(R.id.input);
+    resText = findViewById(R.id.result);
+    today = getDate();
     getValutes();
   }
 
@@ -113,16 +123,69 @@ public class StartActivity extends AppCompatActivity {
 
   private String getDate(){
     DatePicker datePicker = findViewById(R.id.calendar);
-    int day = datePicker.getDayOfMonth();
-    int month = datePicker.getMonth() + 1;
-    int year = datePicker.getYear();
-    return String.format(Locale.US, "%d/%d/%d", day, month, year);
+    String day = String.valueOf(datePicker.getDayOfMonth());
+    String month = String.valueOf(datePicker.getMonth() + 1);
+    String year = String.valueOf(datePicker.getYear());
+    if (Integer.valueOf(day) < 10) day = "0" + day;
+    if (Integer.valueOf(month) < 10) month = "0" + month;
+    return year + "/" + month + "/" + day;
   }
 
   public void convert(View view) {
-    TextView textView = findViewById(R.id.result);
-    textView.setText(getDate());
-    //TODO: Convert(date, val1, val2): return res (будет переводить сначала в рубли, потому что все курсы от рубля)
+    curDate = getDate();
+    curFrom = spinnerFrom.getSelectedItem().toString();
+    curTo = spinnerTo.getSelectedItem().toString();
+    String curValue = inputText.getText().toString();
+    if (curValue.equals("")){
+        error("input. Actually it is empty");
+        return;
+    }
+    else{
+        value = Float.valueOf(curValue);
+    }
+    if (curTo.equals(curFrom)){
+        resText.setText(String.valueOf(value));
+    }
+    else{
+        mQueue = Volley.newRequestQueue(this);
+        String url;
+        if (!curDate.equals(today)) {
+            //TODO: something wrong (debug message dkwtd)
+            url = "https://www.cbr-xml-daily.ru/archive/" + curDate + "/daily_json.js";
+        }
+        else {
+            url = "https://www.cbr-xml-daily.ru/daily_json.js";
+        }
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+                try {
+                    JSONObject jsonObject = response.getJSONObject("Valute");
+                    Iterator<String> keys = jsonObject.keys();
+                    while (keys.hasNext()){
+                        String key = keys.next();
+                        JSONObject valute = jsonObject.getJSONObject(key);
+                        if (curFrom.equals(valute.getString("Name"))){
+                            value = value / Float.valueOf(valute.getString("Value"));
+                        }
+                        if (curTo.equals(valute.getString("Name"))){
+                            value = value * Float.valueOf(valute.getString("Value"));
+                        }
+                    }
+                } catch (JSONException e) {
+                    error("date, try another one");
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error("request or date");
+            }
+        });
+        mQueue.add(request);
+        //TODO: add pause to waicd t
+        resText.setText(String.valueOf(value));
+    }
     //TODO: add_to_history(db, ...);
   }
 }
