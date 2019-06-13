@@ -2,30 +2,29 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="28"
-    build-mode="COLD"
+    build-mode="HOT_WARM"
     format="10"
-    ir-eligibility="METHOD_ADDED"
     plugin-version="3.3.0-alpha06"
-    timestamp="1560461321583"
+    timestamp="1560461559999"
     token="-7375726179444804046"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="2252" />
+        duration="2118" />
     <task
         name="instant-run-dex"
-        duration="0" />
+        duration="315" />
     <task
         name="instant-run-transform"
-        duration="398" />
+        duration="150" />
     <task
         name="verifier"
         duration="32" />
 
     <artifact
-        location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-        type="SPLIT" />
+        location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/reload-dex/debug/classes.dex"
+        type="RELOAD_DEX" />
 
     <build
         build-mode="FULL"
@@ -79,6 +78,14 @@
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="HOT_WARM"
+        timestamp="1560461559999"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/reload-dex/debug/classes.dex"
+            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

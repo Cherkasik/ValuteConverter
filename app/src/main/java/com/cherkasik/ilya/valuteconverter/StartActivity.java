@@ -164,13 +164,13 @@ import java.util.concurrent.TimeUnit;
                     }
                     resText.setText(String.valueOf(inputVal));
                 } catch (JSONException e) {
-                    error("date, try another one");
+                    error("response");
                 }
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                error("request or date");
+                error("date, try another one");
             }
         });
         mQueue.add(request);
