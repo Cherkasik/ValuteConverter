@@ -2,34 +2,38 @@
 <instant-run
     abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="28"
-    build-mode="HOT_WARM"
+    build-mode="COLD"
     format="10"
+    ir-eligibility="METHOD_ADDED"
     plugin-version="3.3.0-alpha06"
-    timestamp="1560438898137"
+    timestamp="1560461321583"
     token="-7375726179444804046"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="600" />
+        duration="2252" />
     <task
         name="instant-run-dex"
-        duration="237" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="150" />
+        duration="398" />
     <task
         name="verifier"
-        duration="8" />
+        duration="32" />
 
     <artifact
-        location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1560438105840"
+        timestamp="1560460043149"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
@@ -61,9 +65,6 @@
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
@@ -72,20 +73,12 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="METHOD_DELETED"
-        timestamp="1560438846838"
+        ir-eligibility="METHOD_ADDED"
+        timestamp="1560461321583"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1560438898137"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

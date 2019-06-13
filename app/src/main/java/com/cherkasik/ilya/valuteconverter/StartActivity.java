@@ -14,22 +14,15 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Locale;
+import java.util.concurrent.TimeUnit;
 
-public class StartActivity extends AppCompatActivity {
+ public class StartActivity extends AppCompatActivity {
   private SQLiteDatabase db;
   private Spinner spinnerFrom;
   private Spinner spinnerTo;
@@ -39,7 +32,7 @@ public class StartActivity extends AppCompatActivity {
   private TextView resText;
   private String curFrom;
   private String curTo;
-  private float value;
+  private Float inputVal;
   private String today;
 
   private void error(String name){
@@ -131,7 +124,7 @@ public class StartActivity extends AppCompatActivity {
     return year + "/" + month + "/" + day;
   }
 
-  public void convert(View view) {
+  public void convert(View view) throws InterruptedException {
     curDate = getDate();
     curFrom = spinnerFrom.getSelectedItem().toString();
     curTo = spinnerTo.getSelectedItem().toString();
@@ -141,12 +134,9 @@ public class StartActivity extends AppCompatActivity {
         return;
     }
     else{
-        value = Float.valueOf(curValue);
+        inputVal = Float.valueOf(curValue);
     }
-    if (curTo.equals(curFrom)){
-        resText.setText(String.valueOf(value));
-    }
-    else{
+    if (!curTo.equals(curFrom)){
         mQueue = Volley.newRequestQueue(this);
         String url;
         if (!curDate.equals(today)) {
@@ -166,12 +156,13 @@ public class StartActivity extends AppCompatActivity {
                         String key = keys.next();
                         JSONObject valute = jsonObject.getJSONObject(key);
                         if (curFrom.equals(valute.getString("Name"))){
-                            value = value / Float.valueOf(valute.getString("Value"));
+                            inputVal = inputVal / Float.valueOf(valute.getString("Value"));
                         }
                         if (curTo.equals(valute.getString("Name"))){
-                            value = value * Float.valueOf(valute.getString("Value"));
+                            inputVal = inputVal * Float.valueOf(valute.getString("Value"));
                         }
                     }
+                    resText.setText(String.valueOf(inputVal));
                 } catch (JSONException e) {
                     error("date, try another one");
                 }
@@ -183,8 +174,9 @@ public class StartActivity extends AppCompatActivity {
             }
         });
         mQueue.add(request);
-        //TODO: add pause to waicd t
-        resText.setText(String.valueOf(value));
+    }
+    else{
+        resText.setText(String.valueOf(inputVal));
     }
     //TODO: add_to_history(db, ...);
   }
