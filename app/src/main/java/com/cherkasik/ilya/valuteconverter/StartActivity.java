@@ -143,10 +143,10 @@ import java.util.List;
                         String key = keys.next();
                         JSONObject valute = jsonObject.getJSONObject(key);
                         if (curFrom.equals(valute.getString("Name"))){
-                            inputVal = inputVal / Float.valueOf(valute.getString("Value"));
+                            inputVal = inputVal * Float.valueOf(valute.getString("Value"));
                         }
                         if (curTo.equals(valute.getString("Name"))){
-                            inputVal = inputVal * Float.valueOf(valute.getString("Value"));
+                            inputVal = inputVal / Float.valueOf(valute.getString("Value"));
                         }
                     }
                     resText.setText(String.valueOf(inputVal));

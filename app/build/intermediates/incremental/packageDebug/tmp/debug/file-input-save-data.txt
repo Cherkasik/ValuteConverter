@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Jun 13 17:03:56 MSK 2019
+#Sat Jun 15 21:36:37 MSK 2019
 3.set=DEX
 8.base=/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/transforms/dexMerger/debug/13
 3.path=classes.dex

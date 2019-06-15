@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
-    },
-    {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat",
@@ -40,12 +40,12 @@
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_longpressed_holo.9.png.flat",
@@ -292,28 +292,28 @@
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-mdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/80b2552c3fc3b3492adf343be7c4ffa5/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xhdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/80b2552c3fc3b3492adf343be7c4ffa5/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable_abc_ic_search_api_material.xml.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable/tooltip_frame_dark.xml"
-    },
-    {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable_tooltip_frame_dark.xml.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable/tooltip_frame_dark.xml"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -420,16 +420,16 @@
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-ldrtl-xhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -468,12 +468,12 @@
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-mdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxhdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -612,28 +612,28 @@
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-mdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/color/abc_tint_btn_checkable.xml"
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_16dp.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/color_abc_tint_btn_checkable.xml.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/color/abc_tint_btn_checkable.xml"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -752,12 +752,12 @@
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_light.png"
     },
     {
-        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
@@ -1202,6 +1202,10 @@
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",
         "source": "/home/cherkasik/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/e6259572cf7fd7c68151fbd75434013e/res/anim/abc_slide_out_top.xml"
+    },
+    {
+        "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/menu_history_menu.xml.flat",
+        "source": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/src/main/res/menu/history_menu.xml"
     },
     {
         "merged": "/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/res/merged/debug/color_abc_tint_switch_track.xml.flat",

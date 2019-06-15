@@ -676,6 +676,7 @@ id customPanel
 id date
 id decor_content_parent
 id default_activity_button
+id delete_history
 id dimensions
 id direct
 id disableHome
@@ -721,6 +722,7 @@ id percent
 id progress_circular
 id progress_horizontal
 id radio
+id rel
 id result
 id right
 id right_icon
@@ -829,6 +831,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout tooltip
+menu history_menu
 menu menu_start
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -870,6 +873,7 @@ string curAmount
 string curSelectTextFrom
 string curSelectTextTo
 string dateText
+string delete_history
 string hintText
 string history_elem
 string menu_history

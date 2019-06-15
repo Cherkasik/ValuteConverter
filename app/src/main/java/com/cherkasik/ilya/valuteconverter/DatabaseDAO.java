@@ -10,6 +10,7 @@ import android.util.Log;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -22,7 +23,7 @@ public class DatabaseDAO extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createHistoryTable = "CREATE TABLE IF NOT EXISTS " + tableName + " (_id INEGER PRIMARY KEY AUTOINCREMENT, conv_from TEXT, conv_to TEXT, num FLOAT, res FLOAT, date DATE)";
+        String createHistoryTable = "CREATE TABLE IF NOT EXISTS " + tableName + "(`_id` INTEGER PRIMARY KEY, `conv_from` TEXT, `conv_to` TEXT, `num` FLOAT, `res` FLOAT, `date` DATE)";
         db.execSQL(createHistoryTable);
     }
 
@@ -50,10 +51,13 @@ public class DatabaseDAO extends SQLiteOpenHelper {
         db.beginTransaction();
         if (getHistory().size() > 10){
             rewriteHistory(historyObject, db);
+            db.setTransactionSuccessful();
         }
         else{
             addToHistory(historyObject, db);
+            db.setTransactionSuccessful();
         }
+        db.endTransaction();
     }
 
     private void addToHistory(HistoryObject historyObject, SQLiteDatabase db){
@@ -68,9 +72,6 @@ public class DatabaseDAO extends SQLiteOpenHelper {
         }
         catch(Exception e){
             Log.d(LOG_TAG, "Something wrong with updating history" + e);
-        }
-        finally {
-            db.endTransaction();
         }
     }
 
@@ -100,10 +101,9 @@ public class DatabaseDAO extends SQLiteOpenHelper {
     List<HistoryObject> getHistory(){
         List<HistoryObject> historyObjects;
         historyObjects = new ArrayList<>();
-        String historySelect = "SELECT * FROM " + tableName + " ORDER BY _id DESC";
+        String historySelect = "SELECT * FROM " + tableName;
         SQLiteDatabase db = getReadableDatabase();
         Cursor cursor = db.rawQuery(historySelect, null);
-
         try {
             if (cursor.moveToFirst()) {
                 do {
@@ -114,7 +114,6 @@ public class DatabaseDAO extends SQLiteOpenHelper {
                     newHistoryObject.res = cursor.getFloat(cursor.getColumnIndex("res"));
                     newHistoryObject.date = cursor.getString(cursor.getColumnIndex("date"));
                     historyObjects.add(newHistoryObject);
-
                 } while (cursor.moveToNext());
             }
         } catch (Exception e) {
