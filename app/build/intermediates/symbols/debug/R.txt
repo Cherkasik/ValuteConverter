@@ -687,7 +687,7 @@ int id expanded_menu 0x7f07003b
 int id forever 0x7f07003c
 int id gone 0x7f07003d
 int id groups 0x7f07003e
-int id history_1 0x7f07003f
+int id history 0x7f07003f
 int id home 0x7f070040
 int id homeAsUp 0x7f070041
 int id icon 0x7f070042

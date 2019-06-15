@@ -20,11 +20,10 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
  public class StartActivity extends AppCompatActivity {
-  private SQLiteDatabase db;
   private Spinner spinnerFrom;
+  private DatabaseDAO databaseDAO;
   private Spinner spinnerTo;
   private RequestQueue mQueue;
   private EditText inputText;
@@ -34,16 +33,18 @@ import java.util.concurrent.TimeUnit;
   private String curTo;
   private Float inputVal;
   private String today;
+  private String curValue;
+
 
   private void error(String name){
-    Toast toast = Toast.makeText(getApplicationContext(), "Something wrong with " + name, Toast.LENGTH_SHORT);
-    toast.show();
+    Toast.makeText(getApplicationContext(), "Something wrong with " + name, Toast.LENGTH_SHORT).show();
   }
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+    databaseDAO = DatabaseDAO.getsInstance(this);
     setContentView(R.layout.activity_start);
-    db = create_db();
     spinnerFrom = findViewById(R.id.spinnerFrom);
     spinnerTo = findViewById(R.id.spinnerTo);
     inputText = findViewById(R.id.input);
@@ -56,19 +57,6 @@ import java.util.concurrent.TimeUnit;
   public boolean onCreateOptionsMenu(Menu menu) {
     getMenuInflater().inflate(R.menu.menu_start, menu);
     return true;
-  }
-
-  //TODO: move to DAO
-  private SQLiteDatabase create_db(){
-    SQLiteDatabase db = getBaseContext().openOrCreateDatabase("app.db", MODE_PRIVATE, null);
-    db.execSQL("CREATE TABLE IF NOT EXISTS history (conv_from TEXT, conv_to TEXT, num FLOAT, res FLOAT, date DATE)");
-    return db;
-  }
-
-  //TODO: move to DAO
-  public void add_to_history(SQLiteDatabase db, String conv_from, String conv_to, float num, float res, String date){
-    //TODO: check if there are 10 items already
-    db.execSQL("INSERT INTO history VALUES ("+ conv_from + ", " + conv_to + ", " + num + ", " + res + ", " + date);
   }
 
   private void addItemsOnSpinner(List<String> list){
@@ -128,7 +116,7 @@ import java.util.concurrent.TimeUnit;
     curDate = getDate();
     curFrom = spinnerFrom.getSelectedItem().toString();
     curTo = spinnerTo.getSelectedItem().toString();
-    String curValue = inputText.getText().toString();
+    curValue = inputText.getText().toString();
     if (curValue.equals("")){
         error("input. Actually it is empty");
         return;
@@ -140,7 +128,6 @@ import java.util.concurrent.TimeUnit;
         mQueue = Volley.newRequestQueue(this);
         String url;
         if (!curDate.equals(today)) {
-            //TODO: something wrong (debug message dkwtd)
             url = "https://www.cbr-xml-daily.ru/archive/" + curDate + "/daily_json.js";
         }
         else {
@@ -163,6 +150,8 @@ import java.util.concurrent.TimeUnit;
                         }
                     }
                     resText.setText(String.valueOf(inputVal));
+                    HistoryObject historyObject = new HistoryObject(curFrom, curTo, Float.valueOf(curValue), inputVal, curDate);
+                    databaseDAO.addHistory(historyObject);
                 } catch (JSONException e) {
                     error("response");
                 }
@@ -177,7 +166,8 @@ import java.util.concurrent.TimeUnit;
     }
     else{
         resText.setText(String.valueOf(inputVal));
+        HistoryObject historyObject = new HistoryObject(curFrom, curTo, Float.valueOf(curValue), inputVal, curDate);
+        databaseDAO.addHistory(historyObject);
     }
-    //TODO: add_to_history(db, ...);
   }
 }

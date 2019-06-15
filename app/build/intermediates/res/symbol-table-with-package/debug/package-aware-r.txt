@@ -688,7 +688,7 @@ id expanded_menu
 id forever
 id gone
 id groups
-id history_1
+id history
 id home
 id homeAsUp
 id icon

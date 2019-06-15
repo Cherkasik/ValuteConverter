@@ -2880,7 +2880,7 @@ public final class R {
     public static final int forever=0x7f07003c;
     public static final int gone=0x7f07003d;
     public static final int groups=0x7f07003e;
-    public static final int history_1=0x7f07003f;
+    public static final int history=0x7f07003f;
     public static final int home=0x7f070040;
     public static final int homeAsUp=0x7f070041;
     public static final int icon=0x7f070042;

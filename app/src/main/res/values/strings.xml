@@ -9,4 +9,5 @@
     <string name="menu_history">History</string>
     <string name="history_elem">This is history</string>
     <string name="about_history">Shows history of operations</string>
+    <string name="delete_history">Delete history</string>
 </resources>
