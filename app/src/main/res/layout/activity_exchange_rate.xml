@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/dateEx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dateText"
+                android:textSize="20sp"/>
+
+        <DatePicker
+                android:id="@+id/calendarEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/dateEx"/>
+        <Button
+                android:id="@+id/buttonEx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/buttonPush"
+                android:textSize="20sp"
+                android:onClick="buttonClicked"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/calendarEx"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:id="@+id/exchangeRate"
+                      android:orientation="vertical"
+                      android:layout_below="@id/buttonEx">
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

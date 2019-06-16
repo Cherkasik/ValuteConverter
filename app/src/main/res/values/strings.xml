@@ -10,4 +10,7 @@
     <string name="history_elem">This is history</string>
     <string name="about_history">Shows history of operations</string>
     <string name="delete_history">Delete history</string>
+    <string name="menu_exchange">Exchange Rate</string>
+    <string name="buttonPush">Show Exchange Rate</string>
+    <string name="menu_converter">Valute Converter</string>
 </resources>

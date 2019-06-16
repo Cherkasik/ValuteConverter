@@ -6,7 +6,13 @@
     <item
             android:id="@+id/action_history"
             android:orderInCategory="100"
-            android:onClick="onSettingsMenuClicked"
+            android:onClick="onHistoryMenuClicked"
             android:title="@string/menu_history"
+            app:showAsAction="never"/>
+    <item
+            android:id="@+id/action_exchange"
+            android:orderInCategory="100"
+            android:onClick="onExchangeMenuClicked"
+            android:title="@string/menu_exchange"
             app:showAsAction="never"/>
 </menu>

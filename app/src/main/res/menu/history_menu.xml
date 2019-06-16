@@ -2,11 +2,24 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context=".StartActivity">
+      tools:context=".HistoryActivity">
     <item
             android:id="@+id/delete_history"
             android:orderInCategory="100"
             android:onClick="onSettingsMenuClicked"
             android:title="@string/delete_history"
+            app:showAsAction="never"/>
+    <item
+            android:id="@+id/action_exchange"
+            android:orderInCategory="100"
+            android:onClick="onHistoryExchangeMenuClicked"
+            android:title="@string/menu_exchange"
+            app:showAsAction="never"/>
+
+    <item
+            android:id="@+id/action_converter"
+            android:orderInCategory="100"
+            android:onClick="onHistoryConverterMenuClicked"
+            android:title="@string/menu_converter"
             app:showAsAction="never"/>
 </menu>

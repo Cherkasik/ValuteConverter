@@ -641,7 +641,9 @@ id action_bar_subtitle
 id action_bar_title
 id action_container
 id action_context_bar
+id action_converter
 id action_divider
+id action_exchange
 id action_history
 id action_image
 id action_menu_divider
@@ -661,8 +663,10 @@ id beginning
 id blocking
 id bottom
 id button
+id buttonEx
 id buttonPanel
 id calendar
+id calendarEx
 id cancel_action
 id chains
 id checkbox
@@ -674,6 +678,7 @@ id curSelectTextTo
 id custom
 id customPanel
 id date
+id dateEx
 id decor_content_parent
 id default_activity_button
 id delete_history
@@ -684,6 +689,7 @@ id edit_query
 id end
 id end_padder
 id enterCurText
+id exchangeRate
 id expand_activities_button
 id expanded_menu
 id forever
@@ -809,6 +815,7 @@ layout abc_screen_toolbar
 layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
+layout activity_exchange_rate
 layout activity_history
 layout activity_start
 layout notification_action
@@ -831,6 +838,7 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout tooltip
+menu exchange_rate_menu
 menu history_menu
 menu menu_start
 mipmap ic_launcher
@@ -868,6 +876,7 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string about_history
 string app_name
+string buttonPush
 string buttonText
 string curAmount
 string curSelectTextFrom
@@ -876,6 +885,8 @@ string dateText
 string delete_history
 string hintText
 string history_elem
+string menu_converter
+string menu_exchange
 string menu_history
 string search_menu_title
 string status_bar_notification_info_overflow

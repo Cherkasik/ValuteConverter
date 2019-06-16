@@ -1,5 +1,6 @@
 package com.cherkasik.ilya.valuteconverter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -36,6 +37,16 @@ public class HistoryActivity extends AppCompatActivity {
             linearLayout.removeAllViews();
             displayHistoryElements();
         }
+    }
+
+    public void onHistoryExchangeMenuClicked(MenuItem item){
+        Intent intent = new Intent(HistoryActivity.this, ExchangeRateActivity.class);
+        startActivity(intent);
+    }
+
+    public void onHistoryConverterMenuClicked(MenuItem item){
+        Intent intent = new Intent(HistoryActivity.this, StartActivity.class);
+        startActivity(intent);
     }
 
     private void displayHistoryElements(){

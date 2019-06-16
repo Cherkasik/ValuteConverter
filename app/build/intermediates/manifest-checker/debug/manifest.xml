@@ -29,6 +29,9 @@
         <activity
             android:name="com.cherkasik.ilya.valuteconverter.HistoryActivity"
             android:label="@string/about_history" />
+        <activity
+            android:name="com.cherkasik.ilya.valuteconverter.ExchangeRateActivity"
+            android:label="Exchange rate of valutes" />
 
         <meta-data
             android:name="android.support.VERSION"

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".ExchangeRateActivity">
+
+    <item
+            android:id="@+id/action_history"
+            android:orderInCategory="100"
+            android:onClick="onExchangeHistoryMenuClicked"
+            android:title="@string/menu_history"
+            app:showAsAction="never"/>
+
+    <item
+            android:id="@+id/action_converter"
+            android:orderInCategory="100"
+            android:onClick="onExchangeConverterMenuClicked"
+            android:title="@string/menu_converter"
+            app:showAsAction="never"/>
+</menu>

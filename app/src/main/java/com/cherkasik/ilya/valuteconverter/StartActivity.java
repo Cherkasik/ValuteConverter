@@ -36,8 +36,13 @@ public class StartActivity extends AppCompatActivity {
         return true;
     }
 
-    public void onSettingsMenuClicked(MenuItem item) {
+    public void onHistoryMenuClicked(MenuItem item) {
         Intent intent = new Intent(StartActivity.this, HistoryActivity.class);
+        startActivity(intent);
+    }
+
+    public void onExchangeMenuClicked(MenuItem item){
+        Intent intent = new Intent(StartActivity.this, ExchangeRateActivity.class);
         startActivity(intent);
     }
 

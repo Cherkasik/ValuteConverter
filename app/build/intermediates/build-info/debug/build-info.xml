@@ -4,24 +4,24 @@
     api-level="28"
     build-mode="COLD"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="METHOD_ADDED"
     plugin-version="3.3.0-alpha06"
-    timestamp="1560648107238"
+    timestamp="1560654456935"
     token="-7375726179444804046"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2297" />
+        duration="664" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="326" />
+        duration="98" />
     <task
         name="verifier"
-        duration="46" />
+        duration="17" />
 
     <artifact
         location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -29,11 +29,9 @@
 
     <build
         build-mode="FULL"
-        timestamp="1560640656356"
-        verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1560651664878"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
             type="SPLIT" />
@@ -41,22 +39,10 @@
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
@@ -65,7 +51,22 @@
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
@@ -73,7 +74,29 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1560645213133"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1560653990393"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1560654353876"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
@@ -81,8 +104,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1560648107238"
+        ir-eligibility="METHOD_ADDED"
+        timestamp="1560654456935"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"

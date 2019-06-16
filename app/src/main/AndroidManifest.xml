@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".HistoryActivity" android:label="@string/about_history"/>
+        <activity android:name=".ExchangeRateActivity" android:label="Exchange rate of valutes"/>
     </application>
 
 </manifest>
