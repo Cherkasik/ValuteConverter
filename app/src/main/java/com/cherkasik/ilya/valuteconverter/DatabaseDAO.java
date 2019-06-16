@@ -49,7 +49,7 @@ public class DatabaseDAO extends SQLiteOpenHelper {
     void addHistory(HistoryObject historyObject){
         SQLiteDatabase db = getWritableDatabase();
         db.beginTransaction();
-        if (getHistory().size() > 10){
+        if (getHistory().size() == 10){
             rewriteHistory(historyObject, db);
             db.setTransactionSuccessful();
         }
