@@ -6,22 +6,22 @@
     format="10"
     ir-eligibility="COMPATIBLE"
     plugin-version="3.3.0-alpha06"
-    timestamp="1560645560946"
+    timestamp="1560648107238"
     token="-7375726179444804046"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="783" />
+        duration="2297" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="164" />
+        duration="326" />
     <task
         name="verifier"
-        duration="4" />
+        duration="46" />
 
     <artifact
         location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -82,7 +82,7 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1560645560946"
+        timestamp="1560648107238"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/home/cherkasik/IntelliJIDEAProjects/ValuteConverter/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
